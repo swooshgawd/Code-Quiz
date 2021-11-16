@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-  
-    
 
-<script src="./script.js"></script>
+<body>
+    <header>
+        <h3 id="timer"></h3>
+    </header>
+
+    <div id="outer">
+        <div id="Start">
+            <h2>Coding Quiz</h2>
+            <button id="Start-btn">Start Quiz</button>
+
+
+        </div>
+
+        <div id="Question1" class="hidden">
+            <h3>Which data type is not a primitive data type?</h3>
+            <button id="wrongbtn1">String</button>
+            <button id="wrong1">Boolean</button>
+            <button id="correctbtn1" class="correct">Array</button>
+            <button id="wrongbutton1">Number</button>
+        </div>
+
+        <div id="Question2" class="hidden">
+            <h3>Booleans represent what kind of value?</h3>
+            <button id="wrong2">Number</button>
+            <button id="correctbtn2" class="correct">True/False</button>
+            <button id="wrongbutton2">Words</button>
+            <button id="wrongbtn2">Array</button>
+        </div>
+
+        <div id="Question3" class="hidden">
+            <h3>Which is not a core component of web technology?</h3>
+            <button id="correctbtn3" class="correct">Television</button>
+            <button id="wrongbtn3">HTML</button>
+            <button id="wrongbutton3">CSS</button>
+            <button id="wrong3">JavaScript</button>
+        </div>
+
+        <div id="Question4" class="hidden">
+            <h3>Which one of these is a third-party API?</h3>
+            <button id="wrong4">Banks</button>
+            <button id="wrongbtn4">Credit</button>
+            <button id="correctbtn4" class="correct">Bootstrap</button>
+            <button id="wrongbutton4">iPhones</button>
+        </div>
+
+
+    </div>
+    <div class="hidden" id="initialEntry">
+        <form id="initialForm">
+            <label for="#initialInput">Please enter your initials below:</label>
+            <input id="initialInput" type="text">
+            <button>Enter</button>
+        </form>
+    </div>
+
+    <div class="hidden" id="highScores">
+        <h1>Displaying high score</h1>
+    </div>
+    <!-- enter initials, obtain user input, save into local storage, scoring based on time left, high score list, when you select last answer the timer has to stop. Obtain the last value of timer once final question is selected (stop timer) - global variable  -->
+
+
+    <script src="./script.js"></script>
 </body>
+
 </html>
